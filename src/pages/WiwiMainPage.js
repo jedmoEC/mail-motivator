@@ -15,14 +15,13 @@ import mensamobilevid from "../media/mensamobile.mp4"
 export const Vid = () => {
     if (window.width < 721) {
         return (<video id={'vide'} autoPlay loop muted style={{
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            height: "100vh",}} src={mensamobilevid} playsInline={true}/>)
+            position: "fixed",
+            objectFit: "cover",
+            height: "100vh",}} src={mensamobilevid} playsinline>...</video>)
     } else {
-        console.log(1)
         return (<video id={'vide'} autoPlay loop muted style={{
-            backgroundPosition: "center",
-            backgroundSize: "cover",
+            position: "fixed",
+            objectFit: "cover",
             height: "100vh",}} src={mensahdvid}/>)
     }
 }
