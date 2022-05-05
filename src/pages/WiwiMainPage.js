@@ -20,7 +20,13 @@ export default function WiwiMainPage(props) {
                 position: "fixed",
                 alignContent: "center",
                 objectFit: "cover",
-                height: "100vh",}} src={mensamobilevid} playsInline={true}/>
+                height: "100vh",
+                width: "100vw",
+                zIndex: -1,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                top: 0, }} src={mensamobilevid} playsInline={true}/>
             <IntroOverlay {...props}/>
         </div>
     );
