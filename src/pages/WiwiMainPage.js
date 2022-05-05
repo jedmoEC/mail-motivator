@@ -27,7 +27,7 @@ function IntroHeader() {
         <StyledHeader>
             <nav>
         <span className="logo">
-          An Website of StuRa <b>ˣ</b> J.
+          An Website of StuRa <b>ˣ</b> Ju.
         </span>
             </nav>
         </StyledHeader>

@@ -8,7 +8,7 @@ export default function WiwiStaticQR() {
     <div style={{
         backgroundImage: "url(../staticsite.gif)",
         backgroundPosition: "center",
-        backgroundSize: "cover",
+        backgroundSize: "contain",
         height: "100vh",
     }}>
 
@@ -26,7 +26,9 @@ function Header() {
     <StyledHeader>
       <nav>
         <span className="logo" style={{color: 'black'}}>
-          GO TO THE MENSA <NavLink to="/"/>
+            <NavLink to="/">
+                BACK TO THE MENSA
+            </NavLink>
         </span>
       </nav>
     </StyledHeader>

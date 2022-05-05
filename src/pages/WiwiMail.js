@@ -115,7 +115,7 @@ function Header() {
     return (
         <StyledHeader>
             <nav>
-      <span className='logo'> GO TO THE MENSA <NavLink to="/"/>
+      <span className='logo'><NavLink to="/"> BACK TO THE MENSA </NavLink>
       </span>
             </nav>
         </StyledHeader>
