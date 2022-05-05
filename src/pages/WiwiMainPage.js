@@ -7,24 +7,7 @@ import {
     StyledImage,
 } from "../Style.js";
 
-import mensahdvid from "../media/mensahd.mp4"
 import mensamobilevid from "../media/mensamobile.mp4"
-
-
-
-export const Vid = () => {
-    if (window.width < 721) {
-        return (<video id={'vide'} autoPlay loop muted style={{
-            position: "fixed",
-            objectFit: "cover",
-            height: "100vh",}} src={mensamobilevid} playsInline={true}/>)
-    } else {
-        return (<video autoPlay loop muted style={{
-            position: "fixed",
-            objectFit: "cover",
-            height: "100vh",}} src={mensamobilevid} playsInline={true}/>)
-    }
-}
 
 export default function WiwiMainPage(props) {
     return (
@@ -33,7 +16,10 @@ export default function WiwiMainPage(props) {
                 <title>We want our Mensa back!</title>
             </Helmet>
             <IntroHeader/>
-            <Vid/>
+            <video autoPlay loop muted style={{
+                position: "sticky",
+                objectFit: "cover",
+                height: "100vh",}} src={mensamobilevid} playsInline={true}/>
             <IntroOverlay {...props}/>
         </div>
     );
