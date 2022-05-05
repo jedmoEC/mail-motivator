@@ -17,9 +17,10 @@ export default function WiwiMainPage(props) {
             </Helmet>
             <IntroHeader/>
             <video autoPlay loop muted style={{
-                position: "sticky",
-                objectFit: "cover",
-                height: "100vh",}} src={mensamobilevid} playsInline={true}/>
+                position: "fixed",
+                alignItems: "center",
+                height: "auto",
+                objectFit: "cover",}} src={mensamobilevid} playsInline={true}/>
             <IntroOverlay {...props}/>
         </div>
     );
