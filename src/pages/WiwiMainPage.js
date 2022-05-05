@@ -7,22 +7,34 @@ import {
     StyledImage,
 } from "../Style.js";
 
-import mensavid from "../media/mensahd.mp4";
+import mensahdvid from "../media/mensahd.mp4"
+import mensamobilevid from "../media/mensamobile.mp4"
+
+
+
+export const Vid = () => {
+    if (window.width < 721) {
+        return (<video id={'vide'} autoPlay loop muted style={{
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            height: "100vh",}} src={mensamobilevid} playsInline={true}/>)
+    } else {
+        console.log(1)
+        return (<video id={'vide'} autoPlay loop muted style={{
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            height: "100vh",}} src={mensahdvid}/>)
+    }
+}
 
 export default function WiwiMainPage(props) {
     return (
-        <div
-        >
+        <div>
             <Helmet>
                 <title>We want our Mensa back!</title>
             </Helmet>
             <IntroHeader/>
-            <video autoPlay loop muted src={mensavid}
-                   style={{
-                position: "center",
-                Size: "contain",
-                height: "100vh",
-                   }}/>
+            <Vid/>
             <IntroOverlay {...props}/>
         </div>
     );
