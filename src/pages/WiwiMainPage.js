@@ -7,16 +7,22 @@ import {
     StyledImage,
 } from "../Style.js";
 
+import mensavid from "../media/mensahd.mp4";
+
 export default function WiwiMainPage(props) {
     return (
         <div
-
         >
             <Helmet>
                 <title>We want our Mensa back!</title>
             </Helmet>
             <IntroHeader/>
-
+            <video autoPlay loop muted src={mensavid}
+                   style={{
+                position: "center",
+                Size: "contain",
+                height: "100vh",
+                   }}/>
             <IntroOverlay {...props}/>
         </div>
     );
