@@ -7,7 +7,7 @@ import {
     StyledImage,
 } from "../Style.js";
 
-import mensamobilevid from "../media/mensamobile.mp4"
+import mensamobile from "../media/mensamobile.mp4"
 
 export default function WiwiMainPage(props) {
     return (
@@ -22,11 +22,7 @@ export default function WiwiMainPage(props) {
                 objectFit: "cover",
                 height: "100vh",
                 width: "100vw",
-                zIndex: -1,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                top: 0, }} src={mensamobilevid} playsInline={true}/>
+                }} src={mensamobile} playsInline={true}/>
             <IntroOverlay {...props}/>
         </div>
     );
