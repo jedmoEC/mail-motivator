@@ -91,7 +91,18 @@ const bodies = [
     Wirklich wirklich enttäuschend. Bringen Sie die Mensa in der  %0A \
     Spandauer Straße wieder zurück!  %0A \
      %0A \
-    Grüße"]
+    Grüße",
+    "Liebe Mitarbeiter des STWs, %0A \
+    %0A \
+    wenn sie schon unsere Mensa dicht machen, %0A \
+    kommen sie dann wenigstens mit einem FoodTruck täglich vorbei? %0A \
+    Oder ist der nächste Schritt ein DeliveryService? %0A \
+    Denn ehrlich gesagt seid ihr für die Studierenden mitunter eine der wichtigsten %0A \
+    Institutionen, weshalb lasst ihr euch durch rote Zahlen während den Pandemiejahren beeinflussen? %0A \
+    War doch klar, dass da niemand zur hausinternen Mensa des SPA 1 kommt. %0A \
+    %0A \
+    Ich hoffe es wird eine Lösung gefunden. %0A \
+    Herzallerliebst. Ein Student."]
 
 export default function WiwiMail() {
 
