@@ -111,7 +111,7 @@ const bodies = [
 export default function WiwiMail() {
 
     const head = insertRandom(subs[getRandom(0,subs.length-1)])
-    const body = insertRandom(bodies[getRandom(0,bodies.length-1)])
+    const body = insertRandom(insertRandom(bodies[getRandom(0,bodies.length-1)]))
     const sendstring = `mailto:mensen@stw.berlin?subject=${head}&body=${body}`
 
     return (
