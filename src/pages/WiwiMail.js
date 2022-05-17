@@ -46,7 +46,7 @@ const bodies = [
     und nicht 8€ in Restaurants in der Nähe ausgeben.  %0A \
      %0A \
     Mit freundlichen Grüßen,  %0A \
-    ein Student",
+    ein Studi",
     "Liebes Team des STW,  %0A \
      %0A \
     wie um alles in der Welt können Sie die Mensa einfach schließen und  %0A \
@@ -75,7 +75,7 @@ const bodies = [
     das essen auch subventioniert.  %0A \
      %0A \
     Viele Grüße,  %0A \
-    ein Student",
+    ein Studi",
     "Allerliebstes Mensa-Team,  %0A \
     ich finde es empörend, dass die Mensa in SPA-1 aufgrund von  %0A \
     ökonomischen Gründen in einen Backshop umgewandelt wurde.  %0A \
@@ -96,7 +96,7 @@ const bodies = [
     Spandauer Straße wieder zurück!  %0A \
      %0A \
     Grüße",
-    "Liebe Mitarbeiter des STWs, %0A \
+    "Liebe Mitarbeiter*innen des STWs, %0A \
     %0A \
     wenn sie schon unsere Mensa dicht machen, %0A \
     kommen sie dann wenigstens mit einem FoodTruck täglich vorbei? %0A \
@@ -106,7 +106,7 @@ const bodies = [
     War doch klar, dass da niemand zur hausinternen Mensa des SPA 1 kommt. %0A \
     %0A \
     Ich hoffe es wird eine Lösung gefunden. %0A \
-    Herzallerliebst. Ein Student."]
+    Herzallerliebst. Ein Studi."]
 
 export default function WiwiMail() {
 
