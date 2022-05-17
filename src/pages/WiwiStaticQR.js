@@ -6,17 +6,19 @@ import { StyledHeader } from "../Style.js";
 export default function WiwiStaticQR() {
   return (
     <div style={{
-        backgroundImage: "url(../staticsite.gif)",
-        backgroundPosition: "center",
-        backgroundSize: "contain",
-        height: "100vh",
+       // backgroundImage: "url(../staticsite2.gif)",
+       backgroundColor: "rgb(21,201,243)",
     }}>
 
       <Helmet>
         <title>We want our Mensa back!</title>
       </Helmet>
       <Header/>
-
+        <img src={"../staticsite2.gif"} style={{
+            objectPosition: "center",
+            size: "contain",
+            height: "100vh",
+            }} alt={"QR-CODE FOR SCANNING"}/>
     </div>
   );
 }

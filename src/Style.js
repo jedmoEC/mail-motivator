@@ -18,6 +18,16 @@ const fadeInKeyframes = keyframes`
     opacity: 1;
   }
 `
+const zoom = keyframes`
+    0% {
+        max-height: 400px;
+        max-width: 550px;
+    }
+    100% {
+        max-height: 480px;
+        max-width: 660px;
+    }
+`
 export const StyledHeader = styled.header`
   position:fixed;
   width:100%;
@@ -55,14 +65,14 @@ export const StyledHeader = styled.header`
     span {
       color: silver;
       width:auto;
-      margin-right:auto; 
-      
-      &.logo {  
+      margin-right:auto;
+
+      &.logo {
         padding: .15em 0;
-        margin-left: 1.25em; 
+        margin-left: 1.25em;
         margin-top: -0.5em;
-        border-top: 1px solid rgba(255,255,255,0.5);  
-        border-bottom: 1px solid rgba(255,255,255,0.5);  
+        border-top: 1px solid rgba(255,255,255,0.5);
+        border-bottom: 1px solid rgba(255,255,255,0.5);
         text-transform: uppercase;
         b {
           font-weight: 900;
@@ -73,7 +83,7 @@ export const StyledHeader = styled.header`
 `
 export const StyledOverlay = styled.section`
   position: absolute;
-  top: 0%;
+  top: -30%;
   width:100%;
   height:100%;
   overflow: hidden;
@@ -81,7 +91,7 @@ export const StyledOverlay = styled.section`
   align-items: flex-end;
   font-weight: 200;
   opacity: 0;
-  animation: ${fadeInKeyframes} 200ms linear 0.9s forwards;
+  animation: ${fadeInKeyframes} 100ms linear 2.2s forwards;
   nav {
     flex: 1;
     flex-direction: column;
@@ -104,7 +114,7 @@ export const StyledOverlay = styled.section`
       font-size:3em;
       color: rgba(250,250,250,0.6);
       font-weight: 100;
-      opacity: 0;
+      opacity: 100;
       animation: ${fadeInKeyframes} 200ms linear 1.7s forwards;
       @media (max-height: 400px), (max-width: 550px) {
         font-weight: 200;
@@ -129,6 +139,7 @@ export const StyledOverlay = styled.section`
           }
           &:hover, &:focus {
             color: white;
+            animation: ${zoom} 150ms linear;
           }
         }
         @media (max-height: 400px), (max-width: 550px) {
@@ -147,8 +158,8 @@ export const StyledButtonGroup = styled.div`
   display: inline-flex;
   border: 1.5px solid rgba(255, 255, 255, 0.7);
   overflow: hidden;
-  border-radius: 0.75em; 
-  margin: 0.75em; 
+  border-radius: 0.75em;
+  margin: 0.75em;
   button {
     margin:0;
     padding: .3em .85em;

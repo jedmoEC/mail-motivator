@@ -33,7 +33,11 @@ const subs = ["HU-Wiwi Mensa Beschwerde",
     "Wir haben Hunger!",
     "offizielle Wiwi-Beschwerde",
     "Wo bleibt die Mensa%3F",
-    "Was ist mit euch%3F Wo bleibt unser essen%3F"]
+    "Was ist mit euch%3F Wo bleibt unser essen%3F",
+    "Wie könnt ihr nur unsere Mensa dicht machen?",
+    "Weshalb sollen wir durch eure Entscheidungen jetzt Hungern?",
+    "Ohne Mensa kein Studium, ohne Studium keine Zukunft"]
+
 const bodies = [
     "Sehr geehrtes Mensa-Team,  %0A \
      %0A \
