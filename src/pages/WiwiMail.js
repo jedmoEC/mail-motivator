@@ -9,8 +9,8 @@ function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min +1)) + min;
 }
 function getLetter(){
-    const number = getRandom(1,26)
-    const alphabet = "abcdefghijklmonpqrstuvwxyz"
+    const alphabet = "∣∘⋅∙❜˚˙.,⸘‛'¸˛…‑ˆ.‘¡❢❣ˉ  "
+    const number = getRandom(1,alphabet.length-1)
     return alphabet[number]
 }
 function insertRandom(string) {
