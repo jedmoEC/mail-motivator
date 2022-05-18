@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { NavLink } from "react-router-dom";
 import {StyledHeader} from "../Style";
@@ -19,7 +19,6 @@ function insertRandom(string) {
     return [string.slice(0, randomPosition), randomLetter, string.slice(randomPosition)].join('');
 }
 
-const [count, setCount] = useState(0)
 
 const subs = ["HU-Wiwi Mensa Beschwerde",
     "Macht die Mensa wieder auf",
@@ -112,11 +111,11 @@ const bodies = [
 
 export default function WiwiMail() {
 
+    //const [count, setCount] = useState(0)
+
     const head = insertRandom(subs[getRandom(0,subs.length-1)])
     const body = insertRandom(insertRandom(bodies[getRandom(0,bodies.length-1)]))
     const sendstring = `mailto:mensen@stw.berlin?subject=${head}&body=${body}`
-
-    setCount(count + 1)
 
     return (
         <div>
@@ -134,7 +133,7 @@ function Header() {
     return (
         <StyledHeader>
             <nav>
-      <span className='logo'><NavLink to="/"> BACK TO THE MENSA - No. {count} </NavLink>
+      <span className='logo'><NavLink to="/"> BACK TO THE MENSA</NavLink>
       </span>
             </nav>
         </StyledHeader>
